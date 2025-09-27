@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\Admin\Downloads\CuahangGundam\phpunit.xml" tests="21" assertions="7" errors="14" failures="5" skipped="0" time="0.666581">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.014226">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.014226">
+        <testcase name="test_that_true_is_true" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.014226"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="20" assertions="6" errors="14" failures="5" skipped="0" time="0.652355">
+      <testsuite name="Tests\Feature\CartTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" tests="7" assertions="0" errors="7" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_add_to_cart_success_when_authenticated" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="77" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_add_to_cart_success_when_authenticated&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Dr. Ignatius Hintz, auth@cart.com, $2y$04$VflOQtB/Oatwn8aUad4pkexSxiAd9MrNcLW4xRcu0UnX1HfEkm8uG, c2Ww03705Q, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_add_to_cart_fails_when_unauthenticated" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="109" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_add_to_cart_fails_when_unauthenticated&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Jackie Farrell, auth@cart.com, $2y$04$CFJXGcv1ucxZyHhGFltIE.itdB1BCHwS/5h3Y8CDU4lp5v1Qp161G, yJVYz58XWC, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_add_to_cart_fails_with_validation_errors" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="132" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_add_to_cart_fails_with_validation_errors&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Shemar Klocko, auth@cart.com, $2y$04$eYWJYgpSQlzaNCb0.QKGn.0MeJcRNxm1mZfyE/Do0ksXtl1AxjFKq, Bhvk6wAksL, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_add_to_cart_fails_if_product_not_found" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="154" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_add_to_cart_fails_if_product_not_found&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Tierra Carroll, auth@cart.com, $2y$04$Rm3IU6E.5Y7LaUApkPVf9.cEOJfbIeMfU0X4Sg8QbhPWF5ZAyCd1y, mdoXlRLUJU, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_place_order_success_with_valid_data" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="185" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_place_order_success_with_valid_data&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Dortha Towne, auth@cart.com, $2y$04$YtCU8ceJJzf.6m/cdMvHDuTe.uXEkfkIFBI.t2pI/5VRLCxsOYpEu, wOrN4eupwd, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_place_order_fails_with_validation_errors" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="224" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_place_order_fails_with_validation_errors&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Shanie Mertz, auth@cart.com, $2y$04$helchC4kitfjydkFUD/Cmue/kxirTKLBLrJHD8ryIDYkL2rGXfjA6, lBVbewxYr0, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+        <testcase name="test_place_order_fails_if_cart_is_empty" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php" line="249" class="Tests\Feature\CartTest" classname="Tests.Feature.CartTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\CartTest::test_place_order_fails_if_cart_is_empty&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Van Robel, auth@cart.com, $2y$04$mLJEiDwTLmYDv1VW2PEUZ.4juNAknLxgKd1lR/6phXn.p3xzSx3c6, cYXWjrYcOA, 1, 0901234567, 123 Đường Gundam, Quận 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\CartTest.php:45</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.128185">
+        <testcase name="test_the_application_returns_a_successful_response" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.128185"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\LoginTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php" tests="4" assertions="2" errors="2" failures="2" skipped="0" time="0.271029">
+        <testcase name="test_user_can_login_with_correct_credentials" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php" line="39" class="Tests\Feature\Auth\LoginTest" classname="Tests.Feature.Auth.LoginTest" assertions="0" time="0.067098">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\LoginTest::test_user_can_login_with_correct_credentials&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `updated_at`, `created_at`) values (Martin Pacocha, user@gmail.com, $2y$04$zwrxaIk04XUsXgWnhhMNMeOTusLtzMqIGSFJGx3ptOGIbWtD.MQXW, fUFzR7dhiy, 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php:51
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</error>
+        </testcase>
+        <testcase name="test_login_fails_with_invalid_password" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php" line="79" class="Tests\Feature\Auth\LoginTest" classname="Tests.Feature.Auth.LoginTest" assertions="0" time="0.064954">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\LoginTest::test_login_fails_with_invalid_password&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `updated_at`, `created_at`) values (Lucinda Bogisich, user@gmail.com, $2y$04$CGrKbiqYnuj8.ERh.jRkD.uuIMVZ5QcVAOsEMfBHDdcrfD7azWdxa, mBWEmzugqt, 1, 2025-09-27 14:42:32, 2025-09-27 14:42:32))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php:89
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</error>
+        </testcase>
+        <testcase name="test_login_fails_with_non_existent_email" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php" line="113" class="Tests\Feature\Auth\LoginTest" classname="Tests.Feature.Auth.LoginTest" assertions="1" time="0.079797">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Auth\LoginTest::test_login_fails_with_non_existent_email&#13;
+Expected response status code [401] but received 405.
+Failed asserting that 405 is identical to 401.
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:148
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php:129
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</failure>
+        </testcase>
+        <testcase name="test_login_validation_fails_for_missing_fields" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php" line="139" class="Tests\Feature\Auth\LoginTest" classname="Tests.Feature.Auth.LoginTest" assertions="1" time="0.059181">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Auth\LoginTest::test_login_validation_fails_for_missing_fields&#13;
+Expected response status code [422] but received 405.
+Failed asserting that 405 is identical to 422.
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:148
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\LoginTest.php:153
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Auth\RegistrationTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php" tests="4" assertions="3" errors="1" failures="3" skipped="0" time="0.253141">
+        <testcase name="test_registration_success_with_strong_password" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php" line="42" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="1" time="0.063200">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Auth\RegistrationTest::test_registration_success_with_strong_password&#13;
+Expected response status code [201] but received 405.
+Failed asserting that 405 is identical to 201.
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:148
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php:60
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</failure>
+        </testcase>
+        <testcase name="test_registration_fails_with_weak_password" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php" line="80" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="1" time="0.081058">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Auth\RegistrationTest::test_registration_fails_with_weak_password&#13;
+Expected response status code [422] but received 405.
+Failed asserting that 405 is identical to 422.
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:148
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php:98
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</failure>
+        </testcase>
+        <testcase name="test_registration_fails_with_existing_email" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php" line="114" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="0" time="0.037756">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\Auth\RegistrationTest::test_registration_fails_with_existing_email&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `updated_at`, `created_at`) values (Meta Howell III, existing@example.com, $2y$04$.Z/qjpW4qHGCkUejETVHO.bGjK9Hpd4bwIfE5D3PsstM7eOEpI8XS, Sp3avrgQHj, 1, 2025-09-27 14:42:33, 2025-09-27 14:42:33))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php:124
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</error>
+        </testcase>
+        <testcase name="test_registration_fails_if_passwords_do_not_match" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php" line="152" class="Tests\Feature\Auth\RegistrationTest" classname="Tests.Feature.Auth.RegistrationTest" assertions="1" time="0.071128">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Auth\RegistrationTest::test_registration_fails_if_passwords_do_not_match&#13;
+Expected response status code [422] but received 405.
+Failed asserting that 405 is identical to 422.
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:148
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\RegistrationTest.php:169
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Foundation\Testing\TestCase.php:61</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ServiceTest" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php" tests="4" assertions="0" errors="4" failures="0" skipped="0" time="0.000000">
+        <testcase name="test_service_booking_success_when_authenticated" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php" line="81" class="Tests\Feature\ServiceTest" classname="Tests.Feature.ServiceTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ServiceTest::test_service_booking_success_when_authenticated&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Miss Sadie Boehm, auth@service.com, $2y$04$WpJRhrdcLm9gBa649gkfOuV.Hyl.XD3bRww0680F4/oYbDP2QlFum, oSJjxH07ce, 1, 0901234567, 123 Đường Dịch Vụ, Quận 1, 2025-09-27 14:42:33, 2025-09-27 14:42:33))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php:47</error>
+        </testcase>
+        <testcase name="test_service_booking_fails_with_validation_errors" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php" line="118" class="Tests\Feature\ServiceTest" classname="Tests.Feature.ServiceTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ServiceTest::test_service_booking_fails_with_validation_errors&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Alexandro Mertz, auth@service.com, $2y$04$97whP65wkNRNJqAHxU4/UuSi2RhG2j0oFRrU16UEOAP3STKuCzIXW, 5r2QfGAzIE, 1, 0901234567, 123 Đường Dịch Vụ, Quận 1, 2025-09-27 14:42:33, 2025-09-27 14:42:33))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php:47</error>
+        </testcase>
+        <testcase name="test_service_booking_fails_when_unauthenticated" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php" line="144" class="Tests\Feature\ServiceTest" classname="Tests.Feature.ServiceTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ServiceTest::test_service_booking_fails_when_unauthenticated&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Mrs. Catherine Jerde, auth@service.com, $2y$04$cRFXJhZd5kUJcS6byktxIuXQvO7hpxJoo9pXMc1ohhgo4jqhxzJW2, 2RLvI5Co48, 1, 0901234567, 123 Đường Dịch Vụ, Quận 1, 2025-09-27 14:42:33, 2025-09-27 14:42:33))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php:47</error>
+        </testcase>
+        <testcase name="test_service_booking_fails_if_product_not_found" file="C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php" line="170" class="Tests\Feature\ServiceTest" classname="Tests.Feature.ServiceTest" assertions="0" time="0.000000">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\ServiceTest::test_service_booking_fails_if_product_not_found&#13;
+Illuminate\Database\QueryException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'remember_token' in 'field list' (Connection: mysql, SQL: insert into `user` (`fullname`, `email`, `password`, `remember_token`, `id_role`, `phone`, `address`, `updated_at`, `created_at`) values (Michaela Mraz, auth@service.com, $2y$04$XWYvRFapP1iMJpYyZONLuO5fBdJKIexZP9tOkn/MOqUD6N6SkqV4., xL620Coh8G, 1, 0901234567, 123 Đường Dịch Vụ, Quận 1, 2025-09-27 14:42:33, 2025-09-27 14:42:33))
+&#13;
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:829
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:783
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:588
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Connection.php:540
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3507
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1982
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1333
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1298
+C:\Users\Admin\Downloads\CuahangGundam\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1137
+C:\Users\Admin\Downloads\CuahangGundam\tests\Feature\ServiceTest.php:47</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
